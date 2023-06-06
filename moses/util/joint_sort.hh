@@ -45,6 +45,7 @@ template <class KeyIter, class ValueIter> class JointIter {
       using std::swap;
       swap(*key_, *other.key_);
       swap(*value_, *other.value_);
+    }
 
   private:
     friend class JointProxy<KeyIter, ValueIter>;
