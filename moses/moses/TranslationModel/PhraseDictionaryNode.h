@@ -45,7 +45,7 @@ class PhraseDictionaryNode
   friend class PhraseDictionaryMemory;
   friend class std::map<Word, PhraseDictionaryNode>;
 
-protected:
+public:
   NodeMap m_map;
   TargetPhraseCollection *m_targetPhraseCollection;
 

@@ -1890,7 +1890,7 @@ void decodeHopeOrFear(size_t rank, size_t size, size_t decode, string filename, 
   }
   if (!nbest_out) {
     ostringstream msg;
-    msg << "Unable to open " << filename_nbest;
+    msg << "Unable to open " << filename_nbest.str();
     throw runtime_error(msg.str());
   }
   

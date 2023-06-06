@@ -70,7 +70,7 @@ namespace Moses
     
     TO_STRING();
     
-  protected:
+  public:
     TargetPhraseCollection &GetOrCreateTargetPhraseCollection(PhraseDictionaryNodeSCFG &rootNode
                                                               , const Phrase &source
                                                               , const TargetPhrase &target

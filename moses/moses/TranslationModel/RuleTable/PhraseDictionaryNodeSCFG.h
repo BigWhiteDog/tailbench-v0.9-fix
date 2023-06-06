@@ -120,7 +120,7 @@ private:
   friend class std::map<Word, PhraseDictionaryNodeSCFG>;
   friend class std::map<long, PhraseDictionaryNodeSCFG>;
 
-protected:
+public:
   TerminalMap m_sourceTermMap;
   NonTerminalMap m_nonTermMap;
   TargetPhraseCollection *m_targetPhraseCollection;

@@ -41,7 +41,7 @@ std::auto_ptr<RuleTableLoader> RuleTableLoaderFactory::Create(
 {
   InputFileStream input(path);
   std::string line;
-  bool cont = std::getline(input, line);
+  bool cont = static_cast<bool>(std::getline(input, line));
 
   if (cont) {
     std::vector<std::string> tokens;
